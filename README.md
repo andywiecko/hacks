@@ -17,3 +17,7 @@ pdftk file.pdf cat 12-15 output file_p12-15.pdf
 ```
 uniq filename.txt
 ```
+or using `sort` with `-u` flag
+```
+sort -u filename.txt
+```
