@@ -21,3 +21,8 @@ or using `sort` with `-u` flag
 ```
 sort -u filename.txt
 ```
+
+* SVG to PDF conversion, requirements: `librsvg2-bin`
+```
+rsvg-convert -f pdf -o fig1.pdf fig1.svg
+```
