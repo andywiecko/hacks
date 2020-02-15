@@ -26,3 +26,8 @@ sort -u filename.txt
 ```
 rsvg-convert -f pdf -o fig1.pdf fig1.svg
 ```
+
+* soak up standard input and write to a file, requirements: `moreutils`
+```
+sort -g -k1 -k2 file | sponge file
+```
