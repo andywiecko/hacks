@@ -31,3 +31,8 @@ rsvg-convert -f pdf -o fig1.pdf fig1.svg
 ```
 sort -g -k1 -k2 file | sponge file
 ```
+
+* reduce video size, requirements: `ffmpeg`
+```
+ffmpeg -i input.mp4 -fs 100KB output.mp4
+```
