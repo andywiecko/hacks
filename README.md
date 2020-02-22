@@ -36,3 +36,8 @@ sort -g -k1 -k2 file | sponge file
 ```
 ffmpeg -i input.mp4 -fs 100KB output.mp4
 ```
+
+* grep from `text` to the first empty line
+```
+awk '/text/,/^$/' filename.txt
+```
