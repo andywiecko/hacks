@@ -41,3 +41,8 @@ ffmpeg -i input.mp4 -fs 100KB output.mp4
 ```
 awk '/text/,/^$/' filename.txt
 ```
+
+* write empty line every n-lines
+```
+awk -v n=5 '1; NR % n == 0 {print ""}' filename.txt
+```
