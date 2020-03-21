@@ -46,3 +46,8 @@ awk '/text/,/^$/' filename.txt
 ```
 awk -v n=5 '1; NR % n == 0 {print ""}' filename.txt
 ```
+
+* export `code` installed extensions
+```
+code --list-extensions | xargs -L 1 echo code --install-extension
+```
