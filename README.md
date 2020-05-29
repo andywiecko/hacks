@@ -1,58 +1,76 @@
 # hacks
 
-
 ## collection of useful Linux hacks
 
-* Merging two pdf documents (with hyperlink working), requirements: `pdftk`
+- Merging two pdf documents (with hyperlink working), requirements: `pdftk`
+
 ```
 pdftk file1.pdf file2.pdf cat output mergedfile.pdf
 ```
 
-* Merging two pdf (simpler then pdftk)
+- Merging two pdf (simpler then pdftk)
+
 ```
 pdfunite page1.pdf page2.pdf out.pdf
 ```
 
-* Spliting pdf files (pages range)
+- Spliting pdf files (pages range)
+
 ```
 pdftk file.pdf cat 12-15 output file_p12-15.pdf
 ```
 
-* Omit repeated lines
+- Omit repeated lines
+
 ```
 uniq filename.txt
 ```
+
 or using `sort` with `-u` flag
+
 ```
 sort -u filename.txt
 ```
 
-* SVG to PDF conversion, requirements: `librsvg2-bin`
+- SVG to PDF conversion, requirements: `librsvg2-bin`
+
 ```
 rsvg-convert -f pdf -o fig1.pdf fig1.svg
 ```
 
-* `sponge` -- soak up standard input and write to a file, requirements: `moreutils`
+- `sponge` -- soak up standard input and write to a file, requirements: `moreutils`
+
 ```
 sort -g -k1 -k2 file | sponge file
 ```
 
-* reduce video size, requirements: `ffmpeg`
+- reduce video size, requirements: `ffmpeg`
+
 ```
 ffmpeg -i input.mp4 -fs 100KB output.mp4
 ```
 
-* grep from `text` to the first empty line
+- grep from `text` to the first empty line
+
 ```
 awk '/text/,/^$/' filename.txt
 ```
 
-* write empty line every n-lines
+- write empty line every n-lines
+
 ```
 awk -v n=5 '1; NR % n == 0 {print ""}' filename.txt
 ```
 
-* export `code` installed extensions
+- export `code` installed extensions
+
 ```
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
+
+## `inkscape`
+
+- ungroup `Shift+Ctrl+G`
+- group `Ctrl+G`
+- unlink clone `Shift+Alt+D` ("ungrouping ungroupinglable")
+- document canvas `Shift+Ctrl+D`
