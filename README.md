@@ -62,6 +62,12 @@ awk '/text/,/^$/' filename.txt
 awk -v n=5 '1; NR % n == 0 {print ""}' filename.txt
 ```
 
+- skip first `10` lines
+
+```
+tail -n +10 filename.txt
+```
+
 - export `code` installed extensions
 
 ```
