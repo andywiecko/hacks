@@ -74,7 +74,18 @@ tail -n +10 filename.txt
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
-## `inkscape`
+## collection of useful Windows hacks
+
+- disc format 
+   - open <kbd> Win + R </kbd> and type `diskpart` and run with admin privileges
+   - then to format disc 1, type in console:
+```
+list disk
+select disk 1
+clean
+```
+
+## collection of useful `inkscape` hacks
 
 - ungroup `Shift+Ctrl+G`
 - group `Ctrl+G`
