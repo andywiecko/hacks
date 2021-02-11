@@ -74,6 +74,12 @@ tail -n +10 filename.txt
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
+- pack `git` current branch into archive
+
+```
+git archive --output=./develop-11-02-2021.zip --format=zip HEAD
+```
+
 ## collection of useful Windows hacks
 
 - disc format 
