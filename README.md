@@ -80,6 +80,12 @@ code --list-extensions | xargs -L 1 echo code --install-extension
 git archive --output=./develop-11-02-2021.zip --format=zip HEAD
 ```
 
+- remove all local branches (except `develop`)
+
+```
+git branch | grep -v develop | xargs git branch -D
+```
+
 ## collection of useful Windows hacks
 
 - disc format 
