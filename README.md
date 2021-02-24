@@ -74,6 +74,8 @@ tail -n +10 filename.txt
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
+## collection of useful `git` related hacks
+
 - pack `git` current branch into archive
 
 ```
