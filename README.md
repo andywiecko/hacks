@@ -88,6 +88,12 @@ git archive --output=./develop-11-02-2021.zip --format=zip HEAD
 git branch | grep -v develop | xargs git branch -D
 ```
 
+- cherry-pick of range commits (use `^` to include the start commit as well)
+
+```
+git cherry-pick start_commit_tag^..end_commit_tag
+```
+
 ## collection of useful Windows hacks
 
 - disc format 
