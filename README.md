@@ -94,6 +94,12 @@ git branch | grep -v develop | xargs git branch -D
 git cherry-pick start_commit_tag^..end_commit_tag
 ```
 
+- revert the selected file
+
+```
+git checkout commit_tag -- path/to/file.txt
+```
+
 ## collection of useful Windows hacks
 
 - disc format 
