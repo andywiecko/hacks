@@ -74,6 +74,12 @@ tail -n +10 filename.txt
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
+- reduce size of the pdf file
+
+```
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dBATCH  -dQUIET -sOutputFile=output.pdf input.pdf
+```
+
 ## collection of useful `git` related hacks
 
 - pack `git` current branch into archive
