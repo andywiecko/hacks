@@ -62,6 +62,12 @@ awk '/text/,/^$/' filename.txt
 awk -v n=5 '1; NR % n == 0 {print ""}' filename.txt
 ```
 
+- display distinct values from given column
+
+```
+awk 'NR>1{a[$3]++} END{for(b in a) print b}' filename.txt
+```
+
 - skip first `10` lines
 
 ```
