@@ -112,6 +112,13 @@ git cherry-pick start_commit_tag^..end_commit_tag
 git checkout commit_tag -- path/to/file.txt
 ```
 
+- replace local branch with the corresponding "origin" branch 
+
+```
+git fetch
+git reset --hard @{u}
+```
+
 ## collection of useful Windows hacks
 
 - disc format 
