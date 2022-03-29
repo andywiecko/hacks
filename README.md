@@ -32,6 +32,12 @@ or using `sort` with `-u` flag
 sort -u filename.txt
 ```
 
+- SVG to png conversion, requirements: `librsvg2-bin`
+
+```
+rsvg-convert file.svg -o file.png
+```
+
 - SVG to PDF conversion, requirements: `librsvg2-bin`
 
 ```
