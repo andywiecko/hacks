@@ -125,6 +125,12 @@ git fetch
 git reset --hard @{u}
 ```
 
+- remove branch from remote
+
+```
+git push <remote_name> --delete <branch_name>
+```
+
 ## collection of useful Windows hacks
 
 - disc format 
