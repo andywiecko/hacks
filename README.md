@@ -14,6 +14,12 @@ pdftk file1.pdf file2.pdf cat output mergedfile.pdf
 pdfunite page1.pdf page2.pdf out.pdf
 ```
 
+- Merging multiple pdf into one (order with respect with terminal "* order")
+
+```
+img2pdf *.jpg --output out.pdf
+```
+
 - Spliting pdf files (pages range)
 
 ```
