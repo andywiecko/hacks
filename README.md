@@ -56,6 +56,12 @@ sort -g -k1 -k2 file | sponge file
 ffmpeg -i input.mp4 -fs 100KB output.mp4
 ```
 
+- reduce image size, requirements: image-magick
+
+```
+convert -strip -interlace Plane -gaussian-blur 0.05 -quality 60% -adaptive-resize 60% image.jpg image.jpg
+```
+
 - grep from `text` to the first empty line
 
 ```
