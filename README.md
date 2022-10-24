@@ -154,6 +154,14 @@ select disk 1
 clean
 ```
 
+## misc
+
+- Enable new C# features in C# interactive window:
+
+```csharp
+#reset core
+```
+
 ## collection of useful `inkscape` hacks
 
 - ungroup `Shift+Ctrl+G`
