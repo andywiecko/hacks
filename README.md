@@ -143,6 +143,12 @@ git reset --hard @{u}
 git push <remote_name> --delete <branch_name>
 ```
 
+- interactive rebase on `N` commits behind
+
+```
+git rebase -i HEAD~N
+```
+
 ## collection of useful Windows hacks
 
 - disc format 
