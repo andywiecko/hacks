@@ -20,6 +20,12 @@ pdfunite page1.pdf page2.pdf out.pdf
 img2pdf *.jpg --output out.pdf
 ```
 
+- convert `pdf` to `png`
+
+```
+pdftoppm input.pdf outputname -png
+```
+
 - Spliting pdf files (pages range)
 
 ```
