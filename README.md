@@ -155,10 +155,16 @@ git push <remote_name> --delete <branch_name>
 git rebase -i HEAD~N
 ```
 
-ignore carrige returns in WSL/Windows
+- ignore carrige returns in WSL/Windows
 
 ```
 git config --global core.autocrlf true
+```
+
+- use vim as core editor
+
+```
+git config --global core.editor "vim"
 ```
 
 ## collection of useful Windows hacks
