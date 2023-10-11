@@ -68,6 +68,12 @@ sort -g -k1 -k2 file | sponge file
 ffmpeg -i input.mp4 -fs 100KB output.mp4
 ```
 
+- resize video with preserving the aspect ratio, requirements: `ffmpeg`
+
+```
+ffmpeg -i video.mp4 -vf scale=-2:320 video-scale.mp4
+```
+
 - reduce image size, requirements: image-magick
 
 ```
