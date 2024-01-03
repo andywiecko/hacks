@@ -118,6 +118,12 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -d
 
 ## collection of useful `git` related hacks
 
+- add global alias for `git log --oneline` (usage: `git lg`)
+
+```
+git config --global alias.lg "log --oneline --pretty=format:'%C(auto)%h %C(red)%s'"
+```
+
 - pack `git` current branch into archive
 
 ```
