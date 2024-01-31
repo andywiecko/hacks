@@ -124,6 +124,12 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -d
 git diff --shortstat a^..b
 ```
 
+- get cumulative statistics in LOC:
+
+```
+git log --numstat --format=""  --since="1 Jan, 2023" | awk '{files += 1}{ins += $1}{del += $2} END{print "total: "files" files, "ins" insertions(+) "del" deletions(-)"}'
+```
+
 - add global alias for `git log --oneline` (usage: `git lg`)
 
 ```
