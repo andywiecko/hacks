@@ -118,6 +118,12 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -d
 
 ## collection of useful `git` related hacks
 
+- get changes statistics between commits `a` and `b`:
+
+```
+git diff --shortstat a^..b
+```
+
 - add global alias for `git log --oneline` (usage: `git lg`)
 
 ```
