@@ -191,6 +191,12 @@ git config --global core.autocrlf true
 git config --global core.editor "vim"
 ```
 
+- grab remote branch from fork to local repo
+
+```
+git fetch https://github.com/<THEIR USERNAME>/<REPO>.git <THEIR BRANCH>:<OUR NAME FOR BRANCH>
+```
+
 ## collection of useful Windows hacks
 
 - disc format 
