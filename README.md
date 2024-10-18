@@ -118,6 +118,12 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -d
 
 ## collection of useful `git` related hacks
 
+- list all branches with given prefix (e.g. "fix/")
+
+```
+git branch --list "fix/*"
+```
+
 - get changes statistics between commits `a` and `b`:
 
 ```
