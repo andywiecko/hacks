@@ -116,6 +116,12 @@ code --list-extensions | xargs -L 1 echo code --install-extension
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dBATCH  -dQUIET -sOutputFile=output.pdf input.pdf
 ```
 
+- unzip google drive zip collections
+
+```
+unzip '*.zip' -d combinedfolder
+```
+
 ## collection of useful `git` related hacks
 
 - list all branches with given prefix (e.g. "fix/")
