@@ -211,6 +211,12 @@ git fetch https://github.com/<THEIR USERNAME>/<REPO>.git <THEIR BRANCH>:<OUR NAM
 
 ## collection of useful Windows hacks
 
+- use `pip` on some windows
+
+```
+py -m pip install ...
+```
+
 - disc format 
    - open <kbd> Win + R </kbd> and type `diskpart` and run with admin privileges
    - then to format disc 1, type in console:
